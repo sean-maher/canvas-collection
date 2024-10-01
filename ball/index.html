@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Project</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    #controls {
+      margin-right: 20px;
+    }
+    canvas {
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <h2>Change Ball Color</h2>
+    <form id="colorForm">
+      <label for="colorInput">Select color:</label><br>
+      <input type="color" id="colorInput" value="#0000FF"><br><br>
+      <button type="button" id="applyColor">Apply Color</button>
+    </form>
+  </div>
+  
+  <canvas id="gameCanvas"></canvas>
+
+  <script src="app.js"></script>
+</body>
+</html>
